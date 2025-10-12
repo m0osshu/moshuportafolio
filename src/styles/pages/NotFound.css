@@ -1,0 +1,31 @@
+.not-found-container {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/img/home/fondonoticia.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-primary);
+}
+.not-found-header {
+    margin-bottom: 2rem;
+}
+
+.not-found-title {
+    font-size: 5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.not-found-subtitle {
+    font-size: 2rem;
+    color: black;
+}
+
+.not-found-image-container {
+    margin: 2rem 0;
+    max-width: 300px;
+}
+

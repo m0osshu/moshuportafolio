@@ -1,0 +1,92 @@
+.projects-section {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+        url('../../assets/img/home/rei-ayanami-de-neon-genesis-evangelion_2560x1600_xtrafondos.com.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: var(--spacing-2xl) 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-2xl);
+    font-size: var(--font-size-lg);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 var(--spacing-lg);
+}
+
+/* Asegurar que las tarjetas de proyecto sean legibles */
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    color: var(--text-primary);
+}
+
+.project-card h3,
+.project-card p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-section {
+        background-attachment: scroll;
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .projects-grid {
+        gap: var(--spacing-lg);
+        padding: 0 var(--spacing-md);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-sm);
+    }
+}

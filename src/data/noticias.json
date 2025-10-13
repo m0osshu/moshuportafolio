@@ -2,17 +2,39 @@
   "noticias": [
     {
       "id": 1,
-      "titulo": "Nuevo Proyecto Desarrollado",
-      "fecha": "2024-01-15",
-      "contenido": "He completado el desarrollo de una API REST con Spring Boot que incluye autenticación JWT y documentación con Swagger.",
-      "categoria": "Desarrollo"
+      "titulo": "Científicos Descubren Que La Esperanza Tiene Fecha de Expiración",
+      "fecha": "2025-10-12",
+      "contenido": "Investigadores confirmaron que la esperanza humana se evapora a los 27 años promedio o al tercer lunes consecutivo con reuniones por Zoom. Los gobiernos estudian declararla especie en peligro de extinción.",
+      "categoria": "Ciencia"
     },
     {
       "id": 2,
-      "titulo": "Certificación en React",
-      "fecha": "2024-01-10",
-      "contenido": "Obtuve una certificación en desarrollo frontend con React y Bootstrap, mejorando mis habilidades en interfaces modernas.",
-      "categoria": "Educación"
+      "titulo": "Nuevo Servicio de Streaming Promete Mostrar Tu Vida en Tiempo Real",
+      "fecha": "2025-10-11",
+      "contenido": "‘RealFlix’ transmitirá tu rutina diaria sin cortes, incluyendo momentos de angustia existencial, procrastinación y búsqueda desesperada de propósito. El servicio ya superó en vistas a varias series de ficción.",
+      "categoria": "Sociedad"
+    },
+    {
+      "id": 3,
+      "titulo": "Gobierno Lanza App Para Medir Cuánto Te Quejas",
+      "fecha": "2025-10-10",
+      "contenido": "La aplicación 'QuejApp' asigna puntos por cada queja compartida. Los ciudadanos con mayor puntaje recibirán medallas y descuentos en terapias grupales. En menos de 24 horas, el servidor colapsó por exceso de usuarios.",
+      "categoria": "Política"
+    },
+    {
+      "id": 4,
+      "titulo": "Nuevo Curso Promete Enseñar Empatía a Ejecutivos en Solo 5 Minutos",
+      "fecha": "2025-10-09",
+      "contenido": "El curso consiste en hacer que los participantes vean su propio salario junto al de sus empleados. En fase de prueba, 3 directivos renunciaron y 2 entraron en shock. Los demás dijeron ‘qué experiencia tan inspiradora’.",
+      "categoria": "Economía"
+    },
+    {
+      "id": 5,
+      "titulo": "Estudio Revela Que La Felicidad Es Solo un Bug del Cerebro",
+      "fecha": "2025-10-08",
+      "contenido": "Neurocientíficos concluyeron que la felicidad es un error en el sistema nervioso. Ya están desarrollando un parche que la elimina, para mejorar la productividad en horario laboral.",
+      "categoria": "Salud Mental"
     }
   ]
 }
+

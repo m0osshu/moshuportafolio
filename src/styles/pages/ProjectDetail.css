@@ -1,32 +1,18 @@
 .project-detail {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('../../assets/img/home/rei-ayanami-de-neon-genesis-evangelion_2560x1600_xtrafondos.com.jpg') no-repeat center center fixed;
+    background:  url('../../assets/img/home/asuka-langley-soryu-de-neon-genesis-evangelion_3840x2160_xtrafondos.com.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-card-detail {
-    background: var(--bg-card);
-    border: 2px solid var(--border-primary);
-    border-radius: 16px;
-    max-width: 500px;
-    width: 100%;
-    overflow: hidden;
-    box-shadow: var(--shadow-xl);
-}
-
 .project-image {
     width: 100%;
-    height: 250px;
+    height: 390px;
     object-fit: cover;
-    border-bottom: 2px solid var(--border-primary);
 }
 
-.project-content {
-    padding: var(--spacing-xl);
-}
 
 .project-title {
     color: var(--text-primary);
@@ -66,10 +52,9 @@
     border: 1px solid var(--accent-primary);
 }
 
-
 .back-button {
-    background: var(--accent-primary);
-    color: black;
+    background: black;
+    color: white;
     border: none;
     padding: var(--spacing-md) var(--spacing-xl);
     border-radius: 25px;

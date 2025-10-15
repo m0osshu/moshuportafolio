@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/atoms/Input.css';
+import '../../styles/atoms/input.css';
 
 function Input({className = "", type = "text", ...props}) {
     const componentProps = {

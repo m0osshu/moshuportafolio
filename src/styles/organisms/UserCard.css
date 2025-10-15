@@ -3,13 +3,10 @@
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-xl);
     overflow: hidden;
-    background: var(--bg-card);
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px; 
     margin: 0 auto;
-    border: 1px solid var(--border-primary);
 }
-
 .user-image-container {
     padding: var(--spacing-2xl) var(--spacing-2xl) 0;
     text-align: center;

@@ -6,6 +6,10 @@ const mockUser = {
   name: 'Juan Pérez',
   titulo: ['Desarrollador Frontend'],
   edad: 30,
+  sobreMi: [ 
+    'Soy un desarrollador apasionado',
+    'Me encanta aprender nuevas tecnologías'
+  ],
   habilidades: ['JavaScript', 'React'],
   redes: [
     { nombre: 'GitHub', url: 'https://github.com', icono: 'github' }
@@ -15,8 +19,7 @@ const mockUser = {
 describe('UserBody Component', () => {
   it('renderiza el nombre del usuario', () => {
     render(<UserBody user={mockUser} />);
-    // El componente renderiza "Juan Pérez." (con punto) no "Juan Pérez"
-    expect(screen.getByText(/Juan Pérez/)).toBeTruthy(); // ← Usamos regex
+    expect(screen.getByText(/Juan Pérez/)).toBeTruthy(); 
   });
 
   it('renderiza las habilidades técnicas', () => {

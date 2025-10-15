@@ -11,7 +11,7 @@ function Noticias() {
             <div className="text-center mb-5">
                 <Text variant="h1" type="title">Noticias</Text>
                 <Text variant="p" type="body" className="section-subtitle">
-                    Últimas actualizaciones y logros
+                    ultimas novedades
                 </Text>
             </div>
             

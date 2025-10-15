@@ -2,14 +2,17 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import UserCard from '@/components/organisms/UserCard';
 
-// Mock de user data
 const mockUser = {
   name: 'Test User',
   titulo: ['Desarrollador Frontend'],
   edad: 30,
+  foto: 'test-image.jpg', 
+  sobreMi: [ 
+    'Soy un desarrollador apasionado por la tecnología',
+    'Me encanta crear soluciones innovadoras'
+  ],
   habilidades: ['JavaScript', 'React'],
   redes: [{ nombre: 'GitHub', url: 'https://github.com', icono: 'github' }],
-  image: 'test-image.jpg'
 };
 
 describe('UserCard Component', () => {

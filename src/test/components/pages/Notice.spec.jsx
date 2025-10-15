@@ -10,6 +10,6 @@ describe('Notice Page', () => {
 
   it('renderiza el subtítulo de noticias', () => {
     render(<Notice />);
-    expect(screen.getByText(/Últimas actualizaciones y logros/)).toBeTruthy();
+    expect(screen.getByText(/ultimas novedades/)).toBeTruthy();
   });
 });

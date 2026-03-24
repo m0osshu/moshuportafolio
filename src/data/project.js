@@ -28,14 +28,6 @@ const projects = [
       image:  paginaWebImg,
       url: 'https://github.com/m0osshu/PetShop.git'
     },
-        {
-      id: 4,
-      name: 'Portafolio',
-      description: 'Proyecto desarrollado con JavaScript y React',
-      tecnologies: ['JavaScript', 'CSS', 'React'],
-      image:  paginaWeBImg,
-      url: 'https://github.com/m0osshu/PortafolioMoshu.git'
-    },
   ];
   
   

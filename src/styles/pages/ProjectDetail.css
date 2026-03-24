@@ -1,6 +1,6 @@
 .project-detail {
     min-height: 100vh;
-    background:  url('../../assets/img/home/asuka-langley-soryu-de-neon-genesis-evangelion_3840x2160_xtrafondos.com.jpg') no-repeat center center fixed;
+    background: #f8fafc;
     background-size: cover;
     display: flex;
     align-items: center;

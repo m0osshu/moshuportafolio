@@ -1,9 +1,7 @@
 .noticias-section {
     padding: var(--spacing-2xl) 0;
     min-height: 100vh;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-        url('../../assets/img/home/rei-ayanami-de-neon-genesis-evangelion_2560x1600_xtrafondos.com.jpg') no-repeat center center fixed;
+    background: moccasin;
     background-size: cover;
     background-attachment: fixed;
 }

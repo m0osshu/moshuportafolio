@@ -1,5 +1,5 @@
 .contact-page {
-    background:  url('../../assets/img/home/mari.png') no-repeat center center fixed;
+    background: moccasin;
     background-size: cover;
     padding: var(--spacing-2xl) var(--spacing-md);
     min-height: 100vh;

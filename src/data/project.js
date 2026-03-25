@@ -18,7 +18,7 @@ const projects = [
       description: 'Proyecto desarrollado con Html, CSS, JavaScript y Bootstrap.',
       tecnologies: ['JavaScript', 'HTML', 'CSS'],
       image:  appMovilImg,
-      url: 'https://github.com/m0osshu/kozi.git'
+      url: 'https://github.com/m0osshu/KoziReact'
     },
     {
       id: 3,

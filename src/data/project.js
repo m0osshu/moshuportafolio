@@ -7,7 +7,7 @@ const projects = [
     {
       id: 1,
       name: 'Proyecto Aplicación movil',
-      description: 'Proyecto desarrollado con AndroidStudio y Kotlin',
+      description: 'Proyecto desarrollado con AndroidStudio y Kotlin.',
       tecnologies: ['Kotlin', 'AndroidStudio'],
       image: apiRestImg,
       url: 'https://github.com/m0osshu/KMdigital.git'
@@ -15,8 +15,8 @@ const projects = [
     {
       id: 2,
       name: 'Kozi',
-      description: 'Proyecto desarrollado con Html, CSS, JavaScript y Bootstrap.',
-      tecnologies: ['JavaScript', 'HTML', 'CSS'],
+      description: 'Proyecto desarrollado con React, tiene su respectiva api.',
+      tecnologies: ['Java', 'React'],
       image:  appMovilImg,
       url: 'https://github.com/m0osshu/KoziReact'
     },

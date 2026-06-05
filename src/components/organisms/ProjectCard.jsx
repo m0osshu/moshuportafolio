@@ -1,39 +1,41 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { IconBrandGithub, IconArrowRight } from '@tabler/icons-react';
 import Image from '../atoms/Image';
-import Button from '../atoms/Button';
-import CardBody from '../molecules/CardBody';
 import { useNavigate } from 'react-router-dom';
 import '../../styles/organisms/ProjectCard.css';
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, index = 0 }) {
   const navigate = useNavigate();
 
-  const handleRepositorioClick = () => {
-    window.open(project.url, '_blank');
-  };
-
-  const handleDetailsClick = () => {
-    navigate(`/projects/${project.id}`);
-  };
-
   return (
-    <div className="project-card">
-      <Image src={project.image} alt={project.name} className="card-img-top" />
-      <div className="card-body">
-        <CardBody
-          title={project.name}
-          description={project.description}
-        />
-        <div className="card-buttons">
-          <Button variant="primary" onClick={handleRepositorioClick}>
+    <motion.div
+      className="project-card"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35, delay: index * 0.08 }}
+    >
+      <div className="project-card__img-wrap">
+        <Image src={project.image} alt={project.name} className="project-card__img" />
+      </div>
+
+      <div className="project-card__body">
+        <h3 className="project-card__title">{project.name}</h3>
+        <p className="project-card__desc">{project.description}</p>
+
+        <div className="project-card__actions">
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card__btn project-card__btn--outline"
+          >
+            <IconBrandGithub size={14} strokeWidth={1.75} />
             Repositorio
-          </Button>
-          <Button variant="outline" onClick={handleDetailsClick}>
-            Detalles
-          </Button>
+          </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,67 +1,95 @@
 .footer {
-  background-color: #0d0d0d;
-  color: #ffffff;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+  border-top: 0.5px solid #e5e7eb;
+  background-color: black;
 }
 
-.footer-container {
+.footer__container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 2.5rem 2rem;
 }
 
-.footer-socials {
+.footer__top {
+  margin-bottom: 1.25rem;
+}
+
+.footer__brand {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
-.footer-link {
-  color: #00bcd4;
-  text-decoration: none;
+.footer__brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2563eb;
+  flex-shrink: 0;
+}
+
+.footer__brand-name {
+  font-size: 14px;
   font-weight: 500;
-  transition: color 0.3s ease, transform 0.2s ease;
+  color: #0640bd;
 }
 
-.footer-link:hover {
-  color: #80deea;
-  transform: translateY(-2px);
-}
-
-.footer-divider {
-  border: none;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 1.5rem 0;
-}
-
-.footer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.footer-info p {
+.footer__tagline {
+  font-size: 13px;
+  color: #9ca3af;
   margin: 0;
-  font-size: 0.9rem;
-  opacity: 0.8;
 }
 
-/* 📱 Responsivo */
-@media (max-width: 600px) {
-  .footer {
-    padding: 1.5rem 1rem;
+.footer__divider {
+  border: none;
+  border-top: 0.5px solid #e5e7eb;
+  margin-bottom: 1.25rem;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__copy {
+  font-size: 12px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer__social-link:hover {
+  color: #111827;
+}
+
+@media (max-width: 540px) {
+  .footer__container {
+    padding: 2rem 1.25rem;
   }
 
-  .footer-socials {
-    gap: 0.8rem;
-  }
-
-  .footer-info p {
-    font-size: 0.8rem;
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
 }

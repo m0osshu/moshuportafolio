@@ -1,21 +1,39 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../styles/organisms/navbar.css';
 
 function NavBar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="navbar-custom">
-      <Container>
-        <Navbar.Brand href="/">Mi Portafolio</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="/projects">Proyectos</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+      <div className="navbar__container">
+
+        <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
+          <li><NavLink to="/" end onClick={() => setMenuOpen(false)}>Inicio</NavLink></li>
+          <li><NavLink to="/projects" onClick={() => setMenuOpen(false)}>Proyectos</NavLink></li>
+        </ul>
+
+        <div className="navbar__actions">
+          <NavLink to="/contact" className="navbar__cta">Contacto</NavLink>
+          <button
+            className={`navbar__burger ${menuOpen ? 'navbar__burger--open' : ''}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Abrir menú"
+          >
+            <span /><span /><span />
+          </button>
+        </div>
+
+      </div>
+    </nav>
   );
 }
 

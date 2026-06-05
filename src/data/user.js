@@ -9,12 +9,15 @@ const user = {
         "Estudiante de Ing. Informatica en DuocUC"
     ],
     sobreMi: [
-        "Apasionado por el terror psicodélico y las narrativas que exploran la mente humana",
-        "Melómano empedernido con gusto ecléctico por diferentes géneros musicales",
-        "Entusiasta de los deportes extremos y la adrenalina que generan",
-        "Fascinado por la psiquiatría, el cerebro humano y sus complejidades",
-        "Desarrollador que disfruta la programación orientada a objetos y Kotlin",
-        "Admirador de la ingeniería aeronáutica y todo lo relacionado con aviones"
+        "Desarrollador Full Stack",
+        "Apasionado por el Front-End y la experiencia de usuario",
+        "Interesado en desarrollo híbrido y aplicaciones multiplataforma",
+        "Programador en Python y amante de la tecnología",
+        "Fan del terror psicológico y las historias que desafían la mente",
+        "Melómano de gustos musicales variados",
+        "Entusiasta de los deportes extremos",
+        "Interesado en psiquiatría, neurociencia y comportamiento humano",
+        "Apasionado por la aviación y la ingeniería aeronáutica"
     ],
     habilidades: [
         "nodeJS",

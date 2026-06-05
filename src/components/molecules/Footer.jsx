@@ -1,44 +1,53 @@
-import React from "react";
-import Text from "../atoms/Text";
-import User from "../../data/user";
-import "../../styles/molecules/Footer.css";
+import React from 'react';
+import { IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconLink } from '@tabler/icons-react';
+import User from '../../data/user';
+import '../../styles/molecules/Footer.css';
 
-function Footer({ className = "" }) {
+const ICON_MAP = {
+  github: IconBrandGithub,
+  linkedin: IconBrandLinkedin,
+  twitter: IconBrandTwitter,
+};
+
+function Footer({ className = '' }) {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className={`footer ${className}`}>
-      <div className="footer-container">
-        {/* Redes sociales */}
-        <div className="footer-socials">
-          {User.redes.map((red, index) => (
-            <a
-              key={index}
-              href={red.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer-link"
-              aria-label={`Ir al perfil de ${red.nombre}`}
-            >
-              <Text variant="p" type="highlight">
-                {red.nombre}
-              </Text>
-            </a>
-          ))}
+      <div className="footer__container">
+
+        <div className="footer__top">
+          <div className="footer__brand">
+            <span className="footer__brand-dot" />
+            <span className="footer__brand-name">{User.name}</span>
+          </div>
+          <p className="footer__tagline">Desarrollador Full Stack · DuocUC</p>
         </div>
 
-        {/* Línea divisoria */}
-        <hr className="footer-divider" />
+        <hr className="footer__divider" />
 
-        {/* Información adicional */}
-        <div className="footer-info">
-          <Text variant="p">
-            © {currentYear} {User.nombre}Todos los derechos reservados Moshu.
-          </Text>
-          <Text variant="p" type="secondary">
-            Desarrollado con usando React.
-          </Text>
+        <div className="footer__bottom">
+          <p className="footer__copy">© {currentYear} {User.name}. Todos los derechos reservados.</p>
+          <div className="footer__socials">
+            {User.redes.map((red) => {
+              const IconComponent = ICON_MAP[red.icono] ?? IconLink;
+              return (
+                <a
+                  key={red.nombre}
+                  href={red.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__social-link"
+                  aria-label={red.Daniel}
+                >
+                  <IconComponent size={16} strokeWidth={1.75} />
+                  {red.nombre}
+                </a>
+              );
+            })}
+          </div>
         </div>
+
       </div>
     </footer>
   );
